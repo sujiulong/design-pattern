@@ -10,9 +10,9 @@ public class Honey extends CondimentDecorator {
 	/**
 	 * 被装饰对象
 	 */
-	private Tea delegate;
+	private BaseTea delegate;
 
-	public Honey(Tea tea) {
+	public Honey(BaseTea tea) {
 		this.delegate = tea;
 	}
 

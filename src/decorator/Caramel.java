@@ -10,9 +10,9 @@ public class Caramel extends CondimentDecorator {
 	/**
 	 * 被装饰对象
 	 */
-	private Tea delegate;
+	private BaseTea delegate;
 
-	public Caramel(Tea tea) {
+	public Caramel(BaseTea tea) {
 		this.delegate = tea;
 	}
 

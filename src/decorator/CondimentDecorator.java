@@ -4,7 +4,7 @@ package decorator;
  * @author Su Jiulong
  * @date 2020/3/8 10:49
  */
-public abstract class CondimentDecorator extends Tea {
+public abstract class CondimentDecorator extends BaseTea {
 	/**
 	 * 标记继承此抽象类必须重写此方法
 	 *

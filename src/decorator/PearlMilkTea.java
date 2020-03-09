@@ -4,7 +4,7 @@ package decorator;
  * @author Su Jiulong
  * @date 2020/3/8 10:46
  */
-public class PearlMilkTea extends Tea {
+public class PearlMilkTea extends BaseTea {
 	public PearlMilkTea(CapacityEnum capacityEnum) {
 		this.capacityEnum = capacityEnum;
 	}

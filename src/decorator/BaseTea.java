@@ -4,7 +4,7 @@ package decorator;
  * @author Su Jiulong
  * @date 2020/3/7 22:01
  */
-public abstract class Tea {
+public abstract class BaseTea {
 	/**
 	 * 描述
 	 */

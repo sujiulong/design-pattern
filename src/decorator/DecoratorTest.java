@@ -12,17 +12,17 @@ package decorator;
  */
 public class DecoratorTest {
 	public static void main(String[] args) {
-		Tea pearlMilkTea = new PearlMilkTea(CapacityEnum.SMALL);
+		BaseTea pearlMilkTea = new PearlMilkTea(CapacityEnum.SMALL);
 		System.out.println(pearlMilkTea.getDescription() + " " + pearlMilkTea.cost());
 
 		pearlMilkTea = new Caramel(new Honey(pearlMilkTea));
 		System.out.println(pearlMilkTea.getDescription() + " " + pearlMilkTea.cost());
 
-		Tea redTea = new Honey(new RedTea(CapacityEnum.TALL));
+		BaseTea redTea = new Honey(new RedTea(CapacityEnum.TALL));
 		System.out.println(redTea.getDescription() + " " + redTea.cost());
 
 		//黑暗料理
-		Tea greenTea = new Caramel(new Honey(new GreenTea(CapacityEnum.GRANDE)));
+		BaseTea greenTea = new Caramel(new Honey(new GreenTea(CapacityEnum.GRANDE)));
 		System.out.println(greenTea.getDescription() + " " + greenTea.cost());
 	}
 }
